@@ -36,7 +36,6 @@ bundle exec kitchen destroy
 - Create an environment file: `.env`, add this content:
 
 ```sh
-export TF_VAR_engineer_cidrs="[\"$(dig +short myip.opendns.com @resolver1.opendns.com)/32\"]"
 export GOOGLE_APPLICATION_CREDENTIALS="credentials.json"
 export GCLOUD_PROJECT="<project-id>
 export GCLOUD_REGION="us-west1"
