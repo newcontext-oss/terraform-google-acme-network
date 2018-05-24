@@ -1,4 +1,5 @@
 resource "random_pet" "name" {
+  length = "1"
   prefix = "${var.organization_name}"
 }
 
