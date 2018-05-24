@@ -1,7 +1,3 @@
-provider "google" {
-  version = "~> 1.0"                                                                                                         
-}
-
 resource "google_compute_network" "main" {
   name        = "${var.organization_name}"
   description = "${var.organization_name} network"
