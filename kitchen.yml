@@ -17,9 +17,6 @@ verifier:
   name: terraform
   groups:
     - name: network
-      controls:
-        - network
-        - subnetworks
 
 platforms:
   - name: terraform
