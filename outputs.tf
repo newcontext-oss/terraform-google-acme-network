@@ -1,3 +1,8 @@
+output "app_subnetwork_name" {
+  description = "The name of the application subnetwork."
+  value       = "${google_compute_subnetwork.app.name}"
+}
+
 output "database_subnetwork_name" {
   description = "The name of the database subnetwork."
   value       = "${google_compute_subnetwork.db.name}"
