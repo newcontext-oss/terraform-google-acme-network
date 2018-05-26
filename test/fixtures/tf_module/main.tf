@@ -13,7 +13,12 @@ provider "random" {
   version = "~> 1.0"
 }
 
+resource "random_pet" "name" {
+  length = "1"
+  prefix = "test-org"
+}
+
 module "network" {
-  organization_name = "test-org"
+  organization_name = "${random_pet.name.id}"
   source            = "../../.."
 }
