@@ -1,11 +1,6 @@
-resource "random_pet" "name" {
-  length = "1"
-  prefix = "${var.organization_name}"
-}
-
 resource "google_compute_network" "main" {
-  name                    = "${random_pet.name.id}"
-  description             = "${random_pet.name.id} network"
+  name                    = "${var.organization_name}"
+  description             = "${var.organization_name} network"
   auto_create_subnetworks = false
 }
 
