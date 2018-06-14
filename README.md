@@ -1,4 +1,4 @@
-# tf_module_glcoud_network
+# terraform-google-acme-network
 
 Terraform module for building out networks on Google Cloud Services
 
@@ -10,7 +10,7 @@ Call it as a module from another Terraform repository.
 
 ```sh
 module "network" {
-  source = "tf_module_gcloud_network"
+  source = "terraform-google-acme-network"
 
   organization_name = "Your Organization Name Here"
 }
